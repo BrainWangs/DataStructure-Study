@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*简单选择排序*/
 int chooseSort(int *arr, int n) {
     int min;
     int temp;

@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*快速排序算法*/
 int sort(int *arr, int low, int high); //排序函数
 int quickSort(int *arr, int low, int high); //递归函数
 
