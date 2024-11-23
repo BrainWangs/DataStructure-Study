@@ -19,7 +19,7 @@ void DFS_AMG(AMGraph G, int v) { //v表示顶点所在邻接矩阵的下标
     printf("%c", G.vexs[v]);
     visited[v] = 1; //对于已访问的顶点,记为1
     for (int w = 0; w < G.vexnum; w++) { //从v所在行开始从左向右遍历,w表示与v相对的另一个顶点下标
-        if (G.matrix[v][w] != MAXINT && visited[w] != 1) {
+        if (G.matrix[v][w] != MAXINT && visited[w] != 1) { //凡遇到连通顶点且未访问过,进入递归
             DFS_AMG(G, w);
         }
     }
