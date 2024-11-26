@@ -22,24 +22,20 @@ int main() {
     int arr[100];
     int i = 0;
 
-    // printf("请输入整数序列，按回车结束输入：\n");
-    // 读取输入并检查数组边界
     while (1) {
         scanf("%d", &arr[i]);
         i++;
         if (getchar() == '\n') break;
-
     }
+    int k;
+    scanf("%d", &k);
 
-    // 排序数组
     chooseSort(arr, i);
 
-    // 输出排序后的数组
-    // printf("排序后的数组为：\n");
-    for (int j = 0; j < i; j++) {
+    for (int j = 0; j < k; j++) {
         printf("%d ", arr[j]);
     }
-    // printf("\n");
+
 
     return 0;
 }
