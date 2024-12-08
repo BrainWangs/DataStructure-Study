@@ -12,8 +12,9 @@ typedef struct LNode
     struct LNode *next; // 指针域
 } LNode, *LinkList;     // LinkList为定义的Lnode指针类型
 
-int initialize(LinkList *L)
-{                                        // 注意传入的是指针的指针, L是二级指针,*L是一级指针
+/*初始化*/
+int initialize(LinkList *L) // 注意传入的是指针的指针, L是二级指针,*L是一级指针
+{                    
     *L = (LNode *)malloc(sizeof(LNode)); // 使用malloc申请内存,malloc返回指针,赋给头指针*L
     (*L)->data = 0;
     (*L)->next = NULL;
